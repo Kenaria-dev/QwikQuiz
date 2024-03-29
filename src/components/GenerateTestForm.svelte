@@ -1,11 +1,10 @@
 <script>
-
   let prompt = "";
 
   async function handleSubmit() {
-    const response = await fetch('/generateTest', {
-      method: 'POST',
-      body: JSON.stringify({test: prompt}),
+    const response = await fetch("/generateTest", {
+      method: "POST",
+      body: JSON.stringify({ test: prompt }),
     });
 
     const data = await response.json();
