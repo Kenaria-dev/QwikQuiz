@@ -3,6 +3,7 @@
 
   function handleSubmit() {
     console.log(prompt);
+    ``;
     prompt = "";
   }
 </script>
