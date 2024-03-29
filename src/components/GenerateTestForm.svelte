@@ -3,7 +3,7 @@
 
   function handleSubmit() {
     console.log(prompt);
-    ``;
+    qwer;
     prompt = "";
   }
 </script>
