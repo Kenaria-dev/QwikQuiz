@@ -1,9 +1,15 @@
 <script>
   let prompt = "";
 
-  function handleSubmit() {
-    console.log(prompt);
-    qwer;
+  async function handleSubmit() {
+    const response = await fetch("/generateTest", {
+      method: "POST",
+      body: JSON.stringify({ test: prompt }),
+    });
+
+    const data = await response.json();
+    console.log(data);
+
     prompt = "";
   }
 </script>
